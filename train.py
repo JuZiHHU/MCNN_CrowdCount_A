@@ -69,7 +69,7 @@ mcnn.to(device)
 
 cp = "./temp/models_B/epoch_999.param"
 mcnn.load_state_dict(torch.load(cp))
-start_epoch = 1010
+start_epoch = 1000#这里是因为之前已经训练了999个模型，继续上次的运行，初次运行可以注释这三行代码
 
 
 
